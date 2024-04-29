@@ -1,0 +1,54 @@
+.m-home {
+  position: relative;
+
+  .m-home-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .m-movie-list {
+      padding: 10px 14px;
+
+      .m-movie-item {
+        display: flex;
+        margin-bottom: 12px;
+
+        .m-movie-pic {
+          border-radius: 4px;
+        }
+
+        .m-movie-info {
+          margin-left: 8px;
+
+          .m-movie-title {
+            @include font(large);
+            @include color(primary);
+            margin-bottom: 12px
+          }
+
+          .m-movie-over {
+            @include font(small);
+            @include color(black);
+          }
+        }
+      }
+    }
+
+    .m-tool {
+      display: flex;
+      justify-content: center;
+
+      button+button {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .m-home-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+  }
+}

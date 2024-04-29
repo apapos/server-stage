@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./run",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@controller/*": [
+        "frame/controllers/*"
+      ],
+      "@controller": [
+        "frame/controllers"
+      ],
+      "@module/*": [
+        "frame/modules/*"
+      ],
+      "@module": [
+        "frame/modules"
+      ],
+      "@service/*": [
+        "frame/services/*"
+      ],
+      "@service": [
+        "frame/services"
+      ],
+      "@hook/*": [
+        "frame/hooks/*"
+      ],
+      "@hook": [
+        "frame/hooks"
+      ],
+      "@interceptor/*": [
+        "frame/interceptors/*"
+      ],
+      "@interceptor": [
+        "frame/interceptors"
+      ],
+      "@filter/*": [
+        "frame/filters/*"
+      ],
+      "@filter": [
+        "frame/filters"
+      ],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "run",
+    "**/*spec.ts"
+  ]
+}

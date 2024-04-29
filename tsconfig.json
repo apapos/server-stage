@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/.d.ts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/run",
+    "**/*spec.ts"
+  ]
+}

@@ -1,0 +1,46 @@
+.m-header {
+  height: $header-height;
+  line-height: $header-height;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .m-header_left {
+    display: flex;
+    flex: 1;
+    height: 100%;
+
+    .m-header_logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        height: 28px;
+      }
+
+      h1 {
+        margin-left: 12px;
+        @include font(large);
+        color: transparent;
+        background-image: linear-gradient(45deg, #eae37a, #42c0ee);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+  }
+
+  .m-header_extra {
+    color: map-get($colors, white);
+    height: 100%;
+
+    .zh-tool {
+      display: flex;
+
+      .zh-tool-cell {
+        margin-left: 12px;
+      }
+    }
+  }
+}

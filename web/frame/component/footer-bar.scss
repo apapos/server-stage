@@ -1,0 +1,10 @@
+.m-footer {
+  height: $footer-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .m-footer-icp {
+    margin-left: 12px;
+  }
+}

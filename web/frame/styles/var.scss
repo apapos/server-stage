@@ -1,0 +1,37 @@
+@use "sass:map" as map;
+
+$primary-color: #1890ff; // 全局主色
+$link-color: #1890ff; // 链接色
+$success-color: #52c41a; // 成功色
+$warning-color: #faad14; // 警告色
+$error-color: #f5222d; // 错误色
+$font-size-base: 14px; // 主字号
+$header-height: 48px; //主体顶部栏高
+$footer-height: 30px; //主体顶部栏高
+
+// Color
+$colors: (
+  ) !default;
+$colors: map.deep-merge((white: #ffffff,
+      black: #000000,
+      primary: #409eff,
+      success: #67c23a,
+      warning: #e6a23c,
+      danger: #f56c6c,
+      error: #f56c6c,
+      info: #909399,
+    ),
+    $colors
+);
+
+// 字体大小
+$size: (
+  ) !default;
+$size: map.deep-merge((min: 12px,
+      small: $font-size-base,
+      default: 16px,
+      large: 18px,
+      max: 22px,
+    ),
+    $size
+);
