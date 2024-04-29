@@ -2,14 +2,14 @@ import react from '@vitejs/plugin-react'
 import fs from 'fs'
 import path from 'path'
 
-const cssMap = ['.sass', '.scss', '.css', '.less', '.stylus', '.styl']
+const cssMap = ['.sass', '.scss', '.css']
 
 export const plugins = [
   react(),
   {
     name: 'plugin',
     transform(code, id) {
-      // 查询同级目录下是否存在同名的scss/css文件，自动导入
+      // 查詢同級目錄下是否存在同名的scss/css文件，自動導入
       if (id.endsWith('.tsx')) {
         let cssCode = '';
         cssMap.forEach((ext) => {
