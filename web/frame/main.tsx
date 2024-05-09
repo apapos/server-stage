@@ -1,16 +1,18 @@
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Layout from './layout'
-import { BrowserRouter, useRoutes } from 'react-router-dom'
-import routers from '@router'
-import '@styles'
+import { Routers } from './routes/index'
+import InstanceProvider from '@reducer'
+import { FluentContext } from '@components/common';
+import { autoStyleImport } from '@style'
+import 'virtual:uno.css'
+autoStyleImport()
 
-const GetRoutes = () => useRoutes(routers)
-
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <Layout>
-    <BrowserRouter>
-      <GetRoutes></GetRoutes>
-    </BrowserRouter>
-  </Layout>
+  <React.StrictMode>
+    <InstanceProvider>
+      <FluentContext >
+        <Routers />
+      </FluentContext>
+    </InstanceProvider>
+  </React.StrictMode>,
 )

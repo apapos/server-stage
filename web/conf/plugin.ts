@@ -1,11 +1,13 @@
 import react from '@vitejs/plugin-react'
 import fs from 'fs'
-import path from 'path'
+import  * as path from 'path'
+import AutoImport from 'unplugin-auto-import/vite'
 
 const cssMap = ['.sass', '.scss', '.css']
 
 export const plugins = [
   react(),
+  AutoImport({ dts: 'types/auto-import.d.ts', imports: ['react'], dirs: ['frame/hooks'] }),
   {
     name: 'plugin',
     transform(code, id) {

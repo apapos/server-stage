@@ -1,0 +1,43 @@
+.error-bundle {
+  font-size: 1.5rem;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+
+  .error-bundle_inner {
+    width: calc(100% - 60px);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (width > 850px) {
+      width: 500px;
+    }
+  }
+}
+
+.header-wrap {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-slot {
+    display: flex;
+    align-items: center;
+
+    .theme-wrap {
+      display: flex;
+      align-items: center;
+      margin-left: 4px;
+      border-radius: 4px;
+      background: rgba($color: #000, $alpha: 0.2);
+
+      .icon {
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+}

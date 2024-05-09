@@ -1,0 +1,79 @@
+{
+  "id": "4367991",
+  "name": "stage",
+  "font_family": "iconfont",
+  "css_prefix_text": "sa-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1256486",
+      "name": "展开",
+      "font_class": "arrow",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "29916608",
+      "name": "错误",
+      "font_class": "error",
+      "unicode": "edc2",
+      "unicode_decimal": 60866
+    },
+    {
+      "icon_id": "39229233",
+      "name": "错误",
+      "font_class": "error-light-copy",
+      "unicode": "edc5",
+      "unicode_decimal": 60869
+    },
+    {
+      "icon_id": "10693598",
+      "name": "退出",
+      "font_class": "exit",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "39229216",
+      "name": "退出",
+      "font_class": "exit-light",
+      "unicode": "edc3",
+      "unicode_decimal": 60867
+    },
+    {
+      "icon_id": "10026553",
+      "name": "个人",
+      "font_class": "person",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "39229226",
+      "name": "个人",
+      "font_class": "person-light",
+      "unicode": "edc4",
+      "unicode_decimal": 60868
+    },
+    {
+      "icon_id": "5219464",
+      "name": "梨",
+      "font_class": "pear",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "15432422",
+      "name": "太阳",
+      "font_class": "light",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "15432437",
+      "name": "月亮",
+      "font_class": "dark",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    }
+  ]
+}

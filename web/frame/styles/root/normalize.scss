@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial,
+    微軟正黑體,
+    'Microsoft JhengHei';
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* 键盘操作焦点切换 使过度更平滑 */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* structural elements 結構元素 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+/* 块级引用元素 */
+div,
+/* list elements 列表元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+/* text formatting elements 文本格式元素 */
+pre,
+/* form elements 表單元素 */
+form,
+button,
+input,
+textarea,
+/* table elements 表單元素 */
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* 链接重置 */
+a {
+  color: $link;
+  text-decoration: none;
+  background-color: transparent;
+  outline: 0;
+}
+
+/* 斜體扶正 */
+em,
+i {
+  font-style: normal;
+}
+
+/** 重置列表元素 **/
+ul,
+li,
+ol,
+dl {
+  list-style: none;
+  font-style: normal;
+  user-select: none;
+}

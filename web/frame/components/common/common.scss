@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.home-nav {
+  display: flex;
+
+  .home-nav__item {
+    font-weight: bold;
+
+    &.active {
+      color: $link-primary;
+    }
+
+    &+.home-nav__item {
+      margin-left: 20px;
+    }
+  }
+}

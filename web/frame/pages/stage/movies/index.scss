@@ -21,14 +21,11 @@
           margin-left: 8px;
 
           .m-movie-title {
-            @include font(large);
-            @include color(primary);
             margin-bottom: 12px
           }
 
           .m-movie-over {
-            @include font(small);
-            @include color(black);
+            color: #333;
           }
         }
       }

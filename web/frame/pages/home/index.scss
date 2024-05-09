@@ -1,0 +1,44 @@
+.home-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1920px;
+  padding: 0 30px;
+  height: 580px;
+  margin: 0 auto;
+  background: url(https://img.js.design/assets/img/6497cb69490cfad3141df4e6.png) no-repeat calc(100% - 30px) center;
+  background-size: 300px;
+
+  .home-wrap__inner {
+    width: 60%;
+
+    .title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: rgba(135, 122, 253);
+      margin-bottom: 20px;
+    }
+
+    .sub-title {
+      line-height: 1.4;
+      font-size: 24px;
+      letter-spacing: 0px;
+      margin-bottom: 20px;
+    }
+
+    .open-stage {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #fff;
+      background: rgba(135, 122, 253);
+
+      &:hover {
+        background: rgb(139, 127, 250);
+      }
+    }
+  }
+}

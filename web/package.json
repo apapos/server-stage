@@ -1,32 +1,39 @@
 {
-  "name": "ll526e-core",
-  "private": true,
-  "version": "0.0.0",
+  "name": "ll526e-framework",
+  "private": "false",
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fluentui/react-components": "^9.49.2",
     "axios": "^1.6.8",
-    "react": "^18.3.1",
+    "classnames": "^2.5.1",
+    "dayjs": "^1.11.11",
     "lodash-es": "^4.17.21",
+    "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-redux": "^9.1.1",
     "react-router-dom": "^6.23.0"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.11",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.7.1",
-    "@typescript-eslint/parser": "^7.7.1",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^9.1.1",
+    "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
-    "sass": "^1.75.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "sass": "^1.77.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10"
+    "unocss": "^0.60.0",
+    "unplugin-auto-import": "^0.17.5",
+    "vite": "^5.2.11"
   }
 }

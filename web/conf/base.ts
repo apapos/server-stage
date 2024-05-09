@@ -3,7 +3,7 @@ import { BuildOptions, ServerOptions } from 'vite'
 export const css = {
   preprocessorOptions: {
     scss: {
-      additionalData: "@use 'frame/styles/var.scss' as *;@use 'frame/styles/mixins.scss' as *;",
+      additionalData: "@use 'frame/styles/root/theme.scss' as *;",
     }
   }
 }

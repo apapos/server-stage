@@ -1,0 +1,24 @@
+:root {
+  --wrap-bg: rgb(254, 242, 242);
+
+  --link-default: #333;
+  --link-primary: #A86EFF;
+  --module-login-bg: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(236, 233, 230, 1) 95.83%, rgba(236, 233, 230, 1) 100%);
+}
+
+.dark {
+  --wrap-bg: rgb(54, 50, 50);
+
+  --link-default: #E2E8F0;
+  --link-primary: #A86EFF;
+  --module-login-bg: linear-gradient(135deg, rgb(133, 136, 210) 0%, rgb(137, 138, 191) 100%);
+}
+
+
+$link: var(--link-default);
+$link-primary: var(--link-primary);
+
+$gap: 12px;
+$gap-inner: 8px;
+
+$body-bg: var(--wrap-bg);
