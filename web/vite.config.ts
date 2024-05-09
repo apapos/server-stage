@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import { css, server, build, plugins } from './conf'
-import UnoCSS from 'unocss/vite'
 
 export default defineConfig({
   resolve: {
@@ -16,10 +15,7 @@ export default defineConfig({
     }
   },
   css,
-  plugins:[
-    ...plugins,
-    UnoCSS()
-  ],
+  plugins,
   server,
   build
 })

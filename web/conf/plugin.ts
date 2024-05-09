@@ -2,11 +2,13 @@ import react from '@vitejs/plugin-react'
 import fs from 'fs'
 import  * as path from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
+import UnoCSS from 'unocss/vite'
 
 const cssMap = ['.sass', '.scss', '.css']
 
 export const plugins = [
   react(),
+  UnoCSS(),
   AutoImport({ dts: 'types/auto-import.d.ts', imports: ['react'], dirs: ['frame/hooks'] }),
   {
     name: 'plugin',
