@@ -13,14 +13,14 @@ module.exports = {
     sourceType: 'module'
   },
   parser: '@typescript-eslint/parser',
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended'
+  ],
   plugins: [
     "react-hooks",
     "react-refresh",
     "@typescript-eslint"
-  ],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
