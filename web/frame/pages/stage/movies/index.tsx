@@ -12,21 +12,27 @@ const HomeWrap = () => {
   const imgUrl = 'https://image.tmdb.org/t/p/original'
   const [list, setList] = useState<ListItem[]>([])
   const [page, setPage] = useState<number>(1)
+  const [loading, setLoading] = useState<boolean>(false)
   const [total, setTotal] = useState<number>(0)
   useEffect(() => {
-    fetch()
     document.getElementsByClassName('m-content')[0]?.scrollTo({
       top: 0,
       behavior: 'smooth'
     })
+    if (!loading) {
+      fetch()
+    }
   }, [page])
 
   const fetch = () => {
+    setLoading(true)
     useFetch.get('/api/tmdb/discover/movie', { params: { page, language: 'zh-CN' } }).then(({ data }) => {
       setList(data.results)
       setTotal(data.total_pages)
+      setLoading(false)
     })
   }
+
   const pageChange = (type: string) => {
     if (type === 'prev') {
       if (page !== 1) {
