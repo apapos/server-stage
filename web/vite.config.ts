@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import { css, server, build, plugins } from './conf'
+import { plugins } from './conf'
 
 export default defineConfig({
   resolve: {
@@ -14,8 +14,38 @@ export default defineConfig({
       '@utils': resolve(__dirname, './frame/utils'),
     }
   },
-  css,
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: "@use 'frame/styles/root/theme.scss' as *;",
+      }
+    }
+  },
   plugins,
-  server,
-  build
+  server: {
+    port: 5566,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5600',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, '')
+      }
+    }
+  },
+  build: {
+    outDir: 'run',
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/@fluentui')) {
+            return 'fluent'
+          } else if (id.includes('node_modules')) {
+            return 'vendor'
+          } else {
+            return
+          }
+        }
+      }
+    }
+  }
 })

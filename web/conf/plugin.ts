@@ -1,6 +1,6 @@
 import react from '@vitejs/plugin-react'
 import fs from 'fs'
-import  * as path from 'path'
+import * as path from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
 
